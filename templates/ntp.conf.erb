@@ -14,7 +14,7 @@ restrict -6 default kod nomodify notrap nopeer noquery
 restrict 127.0.0.1 
 restrict -6 ::1
 
-<% additional_restricts.each do |rline| -%>
+<% @additional_restricts.each do |rline| -%>
 restrict <%= rline %>
 <% end -%>
 
